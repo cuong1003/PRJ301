@@ -37,6 +37,7 @@ public class Admin01 extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet Admin01 at " + request.getContextPath () + "</h1>");
+            out.println("<h1>Day la khong gian ADMIN</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -56,13 +57,6 @@ public class Admin01 extends HttpServlet {
         processRequest(request, response);
     } 
 
-    /** 
-     * Handles the HTTP <code>POST</code> method.
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {

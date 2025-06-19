@@ -5,6 +5,7 @@
 
 package Controllers;
 
+import Models.Users;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -53,26 +54,24 @@ public class Login extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        processRequest(request, response);
+        request.getRequestDispatcher("Views/Login.jsp").forward(request, response);
     } 
-
-    /** 
-     * Handles the HTTP <code>POST</code> method.
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        processRequest(request, response);
+//        processRequest(request, response);
+          String u = request.getParameter("username");
+          String p = request.getParameter("password");
+          int r = Integer.parseInt(request.getParameter("r"));
+          Users us = new Users(u,p,r);
+          if (u.equals("abc") && p.equals("123")) {
+              response.sendRedirect(request.getContextPath() + "/Admin/Admin01");
+          } else {
+              request.setAttribute("fail", "User or Password wrong!");
+              request.getRequestDispatcher("Views/Login.jsp").forward(request, response);
+          }
     }
 
-    /** 
-     * Returns a short description of the servlet.
-     * @return a String containing servlet description
-     */
     @Override
     public String getServletInfo() {
         return "Short description";

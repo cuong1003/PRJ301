@@ -22,7 +22,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Admin01</servlet-name>
-        <url-pattern>/Admin01</url-pattern>
+        <url-pattern>/Admin/Admin01</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Vip01</servlet-name>

@@ -37,6 +37,7 @@ public class Vip02 extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet Vip02 at " + request.getContextPath () + "</h1>");
+            out.println("<h1>Day la Vip 02020202</h1>");
             out.println("</body>");
             out.println("</html>");
         }
