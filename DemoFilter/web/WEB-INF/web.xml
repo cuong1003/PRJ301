@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>Controllers.Login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Admin01</servlet-name>
+        <servlet-class>Controllers.Admin.Admin01</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Vip01</servlet-name>
+        <servlet-class>Controllers.Vip01.Vip01</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Vip02</servlet-name>
+        <servlet-class>Controllers.Vip02.Vip02</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Admin01</servlet-name>
+        <url-pattern>/Admin01</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Vip01</servlet-name>
+        <url-pattern>/Vip01/Vip01</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Vip02</servlet-name>
+        <url-pattern>/Vip02/Vip02</url-pattern>
+    </servlet-mapping>
+</web-app>
