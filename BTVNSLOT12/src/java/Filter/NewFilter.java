@@ -123,6 +123,13 @@ public class NewFilter implements Filter {
                         res.sendRedirect(req.getContextPath()+"/Vip02/Vip02");
                     else
                         chain.doFilter(request, response);
+                } else if (us.getRoll()==2005) {
+                    if (url.contains(req.getContextPath()+"/Admin/") ||
+                        url.contains(req.getContextPath()+"/Vip01/") ||
+                        url.contains(req.getContextPath()+"/Vip02/"))
+                        res.sendRedirect(req.getContextPath()+"/Default/DefaultUser");
+                    else
+                        chain.doFilter(request, response);
                 }
             } else {
                 res.sendRedirect(req.getContextPath()+"/Login");

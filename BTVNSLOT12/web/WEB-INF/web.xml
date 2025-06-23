@@ -28,6 +28,10 @@
         <servlet-name>Admin02</servlet-name>
         <servlet-class>Controllers.Admin.Admin02</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DefaultUser</servlet-name>
+        <servlet-class>Controllers.Default.DefaultUser</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
@@ -47,5 +51,9 @@
     <servlet-mapping>
         <servlet-name>Admin02</servlet-name>
         <url-pattern>/Admin/Admin02</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DefaultUser</servlet-name>
+        <url-pattern>/Default/DefaultUser</url-pattern>
     </servlet-mapping>
 </web-app>

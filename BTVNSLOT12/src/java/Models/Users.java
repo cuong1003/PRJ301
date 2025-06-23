@@ -11,11 +11,19 @@ package Models;
 public class Users {
     private String user;
     private String pass;
+    private String email;
     private int roll;
 
     public Users() {
     }
 
+    public Users(String user, String pass, String email, int roll) {
+        this.user = user;
+        this.pass = pass;
+        this.email = email;
+        this.roll = roll;
+    }
+    
     public Users(String user, String pass, int roll) {
         this.user = user;
         this.pass = pass;
@@ -38,6 +46,14 @@ public class Users {
         this.pass = pass;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public int getRoll() {
         return roll;
     }
@@ -45,5 +61,11 @@ public class Users {
     public void setRoll(int roll) {
         this.roll = roll;
     }
+
+    @Override
+    public String toString() {
+        return "Users{" + "user=" + user + ", pass=" + pass + ", email=" + email + ", roll=" + roll + '}';
+    }
+    
     
 }

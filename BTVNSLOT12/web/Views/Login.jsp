@@ -190,7 +190,7 @@
             if (error != null) {
         %>
             <script>
-                alert("<%= error %>");
+                alert("username: <%= request.getAttribute("uu")%> khong ton tai");
             </script>
         <% } %>
 
