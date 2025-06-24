@@ -33,11 +33,18 @@ public class Vip01 extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Vip01</title>");  
+            out.println("<title>Servlet Vip01</title>"); 
+            out.println("<style>a {text-decoration:none;color:black;}</style>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet Vip01 at " + request.getContextPath () + "</h1>");
             out.println("<h1>Day la phong VIP01</h1>");
+            out.println("<button><a href='/BTVNSLOT12/Admin/Admin01'>Admin</a></button>");
+            out.println("<button><a href='/BTVNSLOT12/Vip01/Vip01'>Vip01</a></button>");
+            out.println("<button><a href='/BTVNSLOT12/Vip02/Vip02'>Vip02</a></button>");
+            out.println("<button><a href='/BTVNSLOT12/Vip03/Vip03'>Vip03</a></button>");
+            out.println("<button><a href='/BTVNSLOT12/Vip04/Vip04'>Vip04</a></button>");
+            out.println("<button><a href='/BTVNSLOT12/Default/DefaultUser'>Default</a></button>");
             out.println("</body>");
             out.println("</html>");
         }

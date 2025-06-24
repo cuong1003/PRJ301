@@ -32,6 +32,14 @@
         <servlet-name>DefaultUser</servlet-name>
         <servlet-class>Controllers.Default.DefaultUser</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Vip03</servlet-name>
+        <servlet-class>Controllers.Vip03.Vip03</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Vip04</servlet-name>
+        <servlet-class>Controllers.Vip04.Vip04</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
@@ -55,5 +63,13 @@
     <servlet-mapping>
         <servlet-name>DefaultUser</servlet-name>
         <url-pattern>/Default/DefaultUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Vip03</servlet-name>
+        <url-pattern>/Vip03/Vip03</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Vip04</servlet-name>
+        <url-pattern>/Vip04/Vip04</url-pattern>
     </servlet-mapping>
 </web-app>

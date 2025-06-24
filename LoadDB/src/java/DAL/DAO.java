@@ -16,11 +16,11 @@ public class DAO {
     public DAO() {
         if (INSTANCE == null) {
             INSTANCE = this;
-            try {
-                con = new DBContext().getConnection();
-            } catch (Exception e) {
-                status = "Error at connection " + e.getMessage();
-            }
+        }
+        try {
+            con = new DBContext().getConnection();
+        } catch (Exception e) {
+            status = "Error at connection " + e.getMessage();
         }
     }
 

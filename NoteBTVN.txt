@@ -1,0 +1,52 @@
+✅ Buổi 6:
+Chủ đề: Hiển thị Checkbox/Radio
+Radio cùng tên thì cùng nhóm và chỉ chọn được 1
+BTVN:
+Tạo form: chọn giới tính bằng radio & chọn khoa bằng combo box
+Hiển thị department bằng radio
+✅ Buổi 7:
+Chủ đề: Xử lý Insert/Update/Delete
+BTVN:
+Chỉ có Insert
+Nếu chưa có thì Insert, có rồi thì Update
+Trước khi Delete, hiển thị câu hỏi:
+“Do you want to delete...?”
+✅ Buổi 8:
+Chủ đề: View dữ liệu & JSTL
+BTVN:
+Chạy được loaddb_jsp.java
+View giới tính: text, checkbox, radio, combo
+Tìm hiểu JSTL Core và các tag tương ứng
+Tag đó là gì?
+Nguyên tắc hoạt động của nó như thế nào?
+✅ Buổi 9:
+Chủ đề: Coding Convention & JavaBean
+JavaBean:
+Class có các biến thành viên (fields)
+Constructor không tham số
+Dùng getter/setter
+Tên biến viết kiểu camelCase, bắt đầu bằng chữ thường
+BTVN:
+Thực hành với combo box và radio cho gender
+✅ Buổi 10:
+Chủ đề: Kết hợp lọc dữ liệu bằng Radio/Combo Box
+BTVN:
+Thay combo box bằng radio box để filter tất cả sinh viên thuộc khoa được chọn
+Làm tương tự cho gender (giới tính)
+Kết hợp gender và department theo điều kiện AND và OR
+VD:
+Lọc tất cả sinh viên là nam và học IA
+Hoặc sinh viên là nam hoặc học IA
+✅ Buổi 11:
+Chủ đề: Sort dữ liệu
+Mỗi tiêu chí sort là 1 button
+Dùng Collections hoặc SQL để thực hiện sắp xếp
+✅ Buổi 12:
+Chủ đề: Kết nối CSDL và kiểm tra thông tin người dùng
+Kết nối vào DB
+Kiểm tra:
+userid
+password
+role
+-> kiểm tra trong DB
+VD: vip03, vip04
